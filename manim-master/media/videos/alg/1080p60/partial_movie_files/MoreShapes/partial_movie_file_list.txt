@@ -1,0 +1,5 @@
+# This file is used internally by FFMPEG.
+file 'file:C:/Users/ashra/Downloads/Alg Project/manim-master/media/videos/alg/1080p60/partial_movie_files/MoreShapes/3529212410_649727739_926794772.mp4'
+file 'file:C:/Users/ashra/Downloads/Alg Project/manim-master/media/videos/alg/1080p60/partial_movie_files/MoreShapes/3040924799_1999872140_2907572921.mp4'
+file 'file:C:/Users/ashra/Downloads/Alg Project/manim-master/media/videos/alg/1080p60/partial_movie_files/MoreShapes/3040924799_2483811087_4291932044.mp4'
+file 'file:C:/Users/ashra/Downloads/Alg Project/manim-master/media/videos/alg/1080p60/partial_movie_files/MoreShapes/3040924799_110068268_4048215119.mp4'
