@@ -22,8 +22,14 @@ manim -pql sort.py DistributionCountingSort
 
 ## Table of Contents
 
-- [Introduction](#introduction)
-- [Installation](#installation)
+- [Introduction](#Introduction)
+- [Installation](#Installation)
 - [Usage](#usage)
-- [Demo](#examples)
-- [Contributing](#contributing)
+- [Demo](#Demo)
+- [Future Work](#FutureWork)
+
+#Introduction
+#Installation
+#usage
+#Demo
+#FutureWork
