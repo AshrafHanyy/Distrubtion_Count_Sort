@@ -22,14 +22,32 @@ manim -pql sort.py DistributionCountingSort
 
 ## Table of Contents
 
-- [Introduction](#Introduction)
+- [Introduction](##Introduction)
 - [Installation](#Installation)
 - [Usage](#usage)
 - [Demo](#Demo)
-- [Future Work](#FutureWork)
+- [Future Work](#Futurework)
 
-#Introduction
-#Installation
-#usage
-#Demo
-#FutureWork
+
+## Installation
+
+To set up the required environment, follow these steps:
+
+1. Install Manim by running the following command:
+
+   ```bash
+   pip install manim
+2. Clone this repository:
+
+```bash
+git clone https://github.com/AshrafHanyy/Distrubtion_Count_Sort
+```
+3. Navigate to the project directory:
+
+```bash
+cd manim-master/sort
+```
+4. Run the Manim animation script:
+```bash
+manim -pql sort.py DistributionCountingSort
+```
