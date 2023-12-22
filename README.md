@@ -37,7 +37,7 @@ To set up the required environment, follow these steps:
 3. Navigate to the project directory:
 
    ```bash
-   cd manim-master/sort
+   cd manim-master
 
 4. Run the Manim animation script:
    ```bash
