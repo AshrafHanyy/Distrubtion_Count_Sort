@@ -28,7 +28,10 @@ manim -pql sort.py DistributionCountingSort
 - [Demo](#Demo)
 - [Future Work](#Futurework)
 
+## Introduction
 
+Distribution Counting Sort is a sorting algorithm designed for integers with a limited range. It employs a counting-based approach to efficiently organize elements in ascending order.
+This animattion was made for a course project using Manim and Adobe Premiere Pro to insert the music you hear.
 ## Installation
 
 To set up the required environment, follow these steps:
@@ -39,15 +42,14 @@ To set up the required environment, follow these steps:
    pip install manim
 2. Clone this repository:
 
-```bash
-git clone https://github.com/AshrafHanyy/Distrubtion_Count_Sort
-```
+   ```bash
+   git clone https://github.com/AshrafHanyy/Distrubtion_Count_Sort
+
 3. Navigate to the project directory:
 
-```bash
-cd manim-master/sort
-```
+   ```bash
+   cd manim-master/sort
+
 4. Run the Manim animation script:
-```bash
-manim -pql sort.py DistributionCountingSort
-```
+   ```bash
+   manim -pql sort.py DistributionCountingSort
