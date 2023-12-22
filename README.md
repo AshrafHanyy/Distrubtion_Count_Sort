@@ -26,7 +26,7 @@ To set up the required environment, follow these steps:
    ```bash
    pip install manim
    ```
- ***Make sure you've installed all of Manim required dependencies like <span style="color:red">LaTeX</span>***
+    ***Make sure you've installed all of Manim required dependencies like <span style="color:red">LaTeX</span>***
 
 2. Clone this repository:
 
