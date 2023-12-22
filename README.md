@@ -9,9 +9,9 @@ Distribution Counting Sort is a sorting algorithm that works efficiently for int
 - [Introduction](#Introduction)
 - [Installation](#Installation)
 - [Usage](#usage)
-- [Animation Description](#AnimationDescription)
+- [Animation Description](#Animation-Description)
 - [Demo](#Demo)
-- [Future Work](#Futurework)
+- [Future Work](#Future-Work)
 
 ## Introduction
 
