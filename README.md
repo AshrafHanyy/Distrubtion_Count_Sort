@@ -5,7 +5,7 @@ Distribution Counting Sort is a sorting algorithm that works efficiently for int
 
 ## Table of Contents
 
-- [Introduction](##Introduction)
+- [Introduction](#Introduction)
 - [Installation](#Installation)
 - [Usage](#usage)
 - [Animation Description](#AnimationDescription)
@@ -16,7 +16,8 @@ Distribution Counting Sort is a sorting algorithm that works efficiently for int
 
 Distribution Counting Sort is a sorting algorithm designed for integers with a limited range. It employs a counting-based approach to efficiently organize elements in ascending order.
 This animattion was made for a course project using Manim and Adobe Premiere Pro to insert the music you hear.
-## Installation
+
+## Installation ⚙️
 
 To set up the required environment, follow these steps:
 
@@ -44,11 +45,21 @@ To run the animation, make sure you have Manim installed and LaTeX along with th
 ```bash
 manim -pql sort.py DistributionCountingSort
 ```
-## Animation Description
+## Animation Description 🎥
 
-The Manim animation begins with a visual representation of an array to be sorted. It then proceeds to illustrate the frequency and distribution arrays, showcasing the proper positions for the last occurrences of each element in the final sorted array.
+The Manim animation visually demonstrates the Distribution Counting Sort algorithm:
+
+**Array Initialization**: Starts with a visual representation of the unsorted array. 📤
+
+**Frequency and Distribution Arrays**: Illustrates the creation of frequency and distribution arrays, providing insights into the counts of each element. 📈
+
+**Sorting Process**: Shows the step-by-step sorting process, determining the correct positions based on element occurrences. 🔍
+
+Informative Text: Includes informative text to enhance understanding, guiding through the algorithm's key steps. 📝
 
 The animation includes informative text, visualizing the step-by-step process of the algorithm, and highlighting key elements for better understanding.
 
+## Demo ▶️
+## Future Work
 
    
