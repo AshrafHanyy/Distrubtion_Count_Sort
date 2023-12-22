@@ -63,6 +63,7 @@ Informative Text: Includes informative text to enhance understanding, guiding th
 The animation includes informative text, visualizing the step-by-step process of the algorithm, and highlighting key elements for better understanding.
 
 ## Demo ▶️
+![Demo GIF](demo.gif)
 ## Future Work
-
+I would like to make the code more dynamic in the future.
    
