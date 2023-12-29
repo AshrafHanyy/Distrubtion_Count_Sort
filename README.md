@@ -37,17 +37,17 @@ To set up the required environment, follow these steps:
 3. Navigate to the project directory:
 
    ```bash
-   cd manim-master
+   cd YourPath/Distrubtion_Count_Sort
 
 4. Run the Manim animation script:
    ```bash
-   manim -pql sort.py DistributionCountingSort
+   manim -pqh sort.py DistributionCountingSort
 ## Usage
 
 To run the animation, make sure you have Manim installed and LaTeX along with their dependencies then execute the provided Python script ```sort.py```.
 
 ```bash
-manim -pql sort.py DistributionCountingSort
+manim -pqh sort.py DistributionCountingSort
 ```
 ## Animation Description 🎥
 
