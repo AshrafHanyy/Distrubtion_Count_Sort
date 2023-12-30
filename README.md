@@ -1,6 +1,6 @@
 # Distribution Counting Sort with Manim
 
-This repository contains a visualization code of the **Distribution Counting Sort** algorithm using [Manim](https://manim.community/), a mathematical animation engine. The implementation is provided by **Ashraf Hany** as part of the Design and Analysis of Algorithms course **CS312** a total of 68 Hours were spent to develop this video.
+This repository contains a visualization code of the **Distribution Counting Sort** algorithm using [Manim](https://manim.community/), a mathematical animation engine. The implementation is provided by **Ashraf Hany** as part of the Design and Analysis of Algorithms course **CS312** a total of 78 Hours were spent to develop this video.
 
 Distribution Counting Sort is a sorting algorithm that works efficiently for integers with a limited range. It operates by counting the occurrences of each element and then determining the correct position for each element in the sorted array based on these counts.
 
