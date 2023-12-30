@@ -2,13 +2,10 @@ from manim import *
 from manim_data_structures import *
 class DistributionCountingSort(Scene):
     def construct(self):
-        # Title
         title = Tex(r"\textbf{Distribution Counting Sort}", font_size=49)
         title = title.center()
         author = Tex(r"\texttt{Ashraf Hany For The Course CS312}", font_size=29, color=YELLOW_E)
         author.next_to(title, DOWN)
-        
-        # Display title and author, then fade out
         self.play(FadeIn(title), FadeIn(author))
         self.wait(2)
         self.play(FadeOut(title), FadeOut(author))
@@ -18,7 +15,6 @@ class DistributionCountingSort(Scene):
         self.play(FadeIn(title))
         self.wait(3)
         self.play(FadeOut(title))
-        # Array description
         description = Text("Consider Sorting The Array", font_size=30)
         description = description.center()
         self.play(FadeIn(description))
@@ -48,13 +44,19 @@ class DistributionCountingSort(Scene):
         self.play(Write(array_info))
         self.wait(2)
         # Fade out everything
-        self.play(FadeOut(description), FadeOut(array_info))
+        self.play(FadeOut(description), FadeOut(array_info),FadeOut(arr))
         arr.__hide_index = False
-
+        array_info = Tex(r"The first step in the algorithm is to calculate the \textit{frequency} and the accumulative frequency \textit{(distribution)} for each value", font_size=33)
+        array_info.center()
+        self.wait(1)
+        self.play(FadeIn(array_info))
+        self.wait(2)
+        self.play(FadeOut(array_info))
+        self.wait(1)
         #self.play(arr.animate.shift(1* UP+ 1.2* LEFT))
         myF = Tex(r"The \textit{frequency} and \textit{distribution} arrays are as follows", font_size = 35)
         myF = myF.next_to(arr,DOWN)
-        self.play(FadeIn(myF), FadeOut(arr))
+        self.play(FadeIn(myF), )
         self.wait(1)
         #self.play(myF.animate.shift(1.5* UP+2* LEFT), arr.animate.shift(-1* UP+ -1.2* LEFT))
         self.play(FadeOut(myF))
@@ -234,7 +236,7 @@ class DistributionCountingSort(Scene):
        
         # Algorithm: Distribution Counting Sort
         # This code could have been more dynamic but it would have required insanely more time to get the 
-        #calculation right, andsince it took me 58 Hours to do this, no more time was available.
+        #calculations right, and since it took me 78 Hours to do this, no more time was available.
 
 
 
@@ -263,9 +265,9 @@ class DistributionCountingSort(Scene):
         
         
         #-------------------First iteration end --------------------
-        
-        self.play(arrow_1.animate.shift(0.55 * UP ))
         p_i.shift_to_elem(4)
+        self.play(arrow_1.animate.shift(0.55 * UP ))
+
         self.wait(1)
         self.play(arrow_1.animate.shift(0.25 * DOWN ))
         var.update_value(
@@ -279,9 +281,9 @@ class DistributionCountingSort(Scene):
         arr2.update_elem_value(1, 2,update_anim_args={'stroke_color': RED_C})
         
         #-------------------Second iteration end ------------------
-
-        self.play(arrow_1.animate.shift(0.50 * UP  ))
         p_i.shift_to_elem(3)
+        self.play(arrow_1.animate.shift(0.50 * UP  ))
+        
         self.wait(1)
         p_j.shift_to_elem(2)
         
@@ -296,9 +298,9 @@ class DistributionCountingSort(Scene):
         self.play(arrow_1.animate.shift(0.30 * DOWN ))
         arr2.update_elem_value(2, 5,update_anim_args={'stroke_color': RED_C})
         #-------------------Third iteration end ------------------
-
-        self.play(arrow_1.animate.shift(0.45 * UP  ))
         p_i.shift_to_elem(2)
+        self.play(arrow_1.animate.shift(0.45 * UP  ))
+       
         self.wait(1)
         p_j.shift_to_elem(1)
    
@@ -314,9 +316,9 @@ class DistributionCountingSort(Scene):
         arr2.update_elem_value(1, 1,update_anim_args={'stroke_color': RED_C})
         
       #-------------------Fourth iteration end ------------------
-
-        self.play(arrow_1.animate.shift(0.50 * UP  ))
         p_i.shift_to_elem(1)
+        self.play(arrow_1.animate.shift(0.50 * UP  ))
+  
         self.wait(1)
         p_j.shift_to_elem(0)
         
@@ -331,9 +333,8 @@ class DistributionCountingSort(Scene):
         self.play(arrow_1.animate.shift(0.25 * DOWN ))
         arr2.update_elem_value(0, 0,update_anim_args={'stroke_color': PURE_RED})
         #-------------------FIFTH iteration end ------------------
-
-        self.play(arrow_1.animate.shift(0.50 * UP  ))
         p_i.shift_to_elem(0)
+        self.play(arrow_1.animate.shift(0.50 * UP  ))
         self.wait(1)
         p_j.shift_to_elem(2)
         self.play(arrow_1.animate.shift(0.25 * DOWN ))
@@ -360,29 +361,110 @@ class DistributionCountingSort(Scene):
         equation = MathTex("c(n) = \sum_{i=1}^{n} 1").scale(1.5)
         equation.center()
         self.play(Write(equation))
-        self.wait()
-        equation.shift(UP * 0.5)
-
+   
         time_complexity_analysis = MathTex(
             r"\text{The algorithm performs two passes through the input array.} \\",
-            r"\text{Each pass involves linear-time operations (looping through the array once).} \\",
-            r"\text{Hence, the overall time complexity is } O(n), \text{ where } n \text{ is the size of the input array.}"
-        ).scale(0.7)
-
+            r"\text{Each pass involves linear-time operations (looping through the array once).}"
+         ).scale(0.7)
         # Centering the Time Complexity Analysis
         time_complexity_analysis.arrange(DOWN, center=True)
-        
-
-        self.play(equation.animate.shift(UP*0.7).scale(0.7))
+        self.play(equation.animate.shift(UP*0.9).scale(0.7))
         time_complexity_analysis.next_to(equation, 1.5*DOWN)
       
+        self.play(Write(time_complexity_analysis))
+        self.wait(3)
+        self.play(FadeOut(time_complexity_analysis))
+        
+       
+
+        self.camera.background_color = BLACK
+        ax = Axes(
+            x_range=[0, 10, 1],
+            y_range=[-2, 10, 1],
+            tips=False,
+            y_axis_config={"color": WHITE},
+            x_axis_config={"color": WHITE},
+            axis_config={"color": BLACK, "include_numbers": True,
+                              'decimal_number_config' : {
+                    'num_decimal_places' : 0,
+                    'color' : BLACK
+                }},
+        )
+        labels = ax.get_axis_labels(x_label='time', y_label='input').set_color(YELLOW_D)
+        self.play(FadeTransform(equation,ax))
+        # Create a linear function
+        linear_function = ax.plot(lambda x: x, x_range=[0.001, 10],use_smoothing=False,use_vectorized=True).set_color(BLUE_C)
+        linear_function_label = ax.get_graph_label(linear_function, direction= DOWN,label='O(n)').set_color(GREEN_C)
+        
+        # Add axes and function to the scene
+        self.play(FadeIn(labels), Create(linear_function), FadeIn(linear_function_label))
+        self.wait(6)
+        self.play(FadeOut(ax), FadeOut(linear_function), FadeOut(linear_function_label), FadeOut(labels))
+
+
+
+        time_complexity_analysis = MathTex(    
+               r"\text{Hence, the overall time complexity is } O(n), \text{ where } n \text{ is the size of the input array.}"
+      
+         ).scale(0.7)
+        time_complexity_analysis.next_to(equation, 1.5*DOWN)
         self.play(FadeIn(time_complexity_analysis))
-        self.wait(5)
+        self.wait(3)
+        self.play(FadeOut(time_complexity_analysis))
+        
+        self.wait(4)
+        title = Tex(r"\textbf{Distribution Counting Sort}", font_size=49).center()
+        author = Tex(r"\texttt{Developed By Ashraf Hany}", font_size=19, color=WHITE)
+        author.next_to(title, DOWN)
+        self.play(FadeIn(title), FadeIn(author))
+        self.wait(2)
+        self.play(FadeOut(title), FadeOut(author))
 
+        # Credits content
+        credits_info = [
+            ("Music", "Idea 22 by Gibran Alcocer"),
+            ("Used Technologies", "Manim, Numpy, Python"),
+            ("Hours Spent to Develop Project", "78")
+        ]
+        shapes = [
+            Circle(color=RED).shift(UP),
+            Square(color=GREEN).shift(DOWN),
+            Triangle(color=GOLD_B).shift(RIGHT)
+        ]
 
+        # Ensure there are equal numbers of credits and shapes
+        assert len(credits_info) == len(shapes), "Number of credits and shapes must be equal"
+        for i, ((credit_title, credit_content), shape) in enumerate(zip(credits_info, shapes)):
+            # Create text for the credits
+            credit_title_text = Tex(f"{credit_title}: ", font_size=39, color=BLUE_C)
+            credit_content_text = Tex(f"{credit_content}", font_size=36, color=WHITE)
+            credit_content_text.next_to(credit_title_text, RIGHT)
+            shape.next_to(credit_content_text, DOWN + LEFT)
 
+            circle = Circle()
+            circle.set_fill(BLUE, opacity=0.5)
+            circle.set_stroke(BLUE_E, width=4)
+            circle.next_to(credit_content_text, UP + LEFT)
+            circle.scale(0.3)
 
-
+            square = Square()
+            square.scale(0.5)
+            if i == 1:
+                self.play(FadeIn(credit_title_text), FadeIn(credit_content_text), run_time=1)
+                self.play(Create(square))
+                self.play(ReplacementTransform(square, circle))
+                self.play(Create(shape))
+            else:
+                self.play(Create(shape))
+                self.play(Create(square))
+                self.play(ReplacementTransform(square, circle))
+                self.play(FadeIn(credit_title_text), FadeIn(credit_content_text), run_time=1)
+            self.wait()
+            self.play(circle.animate.stretch(4, 0))
+            self.play(Rotate(circle, 90 * DEGREES))
+            self.play(circle.animate.shift(2 * RIGHT).scale(0.25))
+            self.wait(2)
+            self.play(FadeOut(circle), FadeOut(shape), FadeOut(credit_title_text), FadeOut(credit_content_text), run_time=1)
 
 
     def get_long_line(self,mob,y_direction,buff=0.5,scale=1):
