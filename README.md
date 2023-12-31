@@ -4,8 +4,14 @@ This repository contains a visualization code of the **Distribution Counting Sor
 
 Distribution Counting Sort is a sorting algorithm that works efficiently for integers with a limited range. It operates by counting the occurrences of each element and then determining the correct position for each element in the sorted array based on these counts.
 
-## Watch The Video [Here](https://www.youtube.com/watch?v=YOUR_VIDEO_ID](https://www.youtube.com/watch?v=TVK_2h5Q1Sc)).
 
+<div align="center">
+  
+
+[![VIDEO](https://img.youtube.com/vi/TVK_2h5Q1Sc/0.jpg)]([https://www.youtube.com/watch?v=YOUTUBE_VIDEO_ID_HERE](https://www.youtube.com/watch?v=TVK_2h5Q1S))
+
+### Watch The Video [Here](https://www.youtube.com/watch?v=TVK_2h5Q1Sc).
+</div>
 
 ## Table of Contents
 
