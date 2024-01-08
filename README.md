@@ -16,7 +16,7 @@ Distribution Counting Sort is a sorting algorithm that works efficiently for int
 ## Table of Contents
 
 - [Introduction](#Introduction)
-- [Installation](#Installation-⚙️)
+- [Installation](#Installation-&-Usage-⚙️)
 - [Usage](#usage)
 - [Animation Description](#Animation-Description)
 - [Demo](#Demo)
@@ -27,7 +27,7 @@ Distribution Counting Sort is a sorting algorithm that works efficiently for int
 Distribution Counting Sort is a sorting algorithm designed for integers with a limited range. It employs a counting-based approach to efficiently organize elements in ascending order.
 This animattion was made for a course project using Manim and Adobe Premiere Pro to insert the music you hear.
 
-## Installation ⚙️
+## Installation & Usage ⚙️
 
 To set up the required environment, follow these steps:
 
@@ -51,13 +51,7 @@ To set up the required environment, follow these steps:
 4. Run the Manim animation script:
    ```bash
    manim -pqh sort.py DistributionCountingSort
-## Usage
 
-To run the animation, make sure you have Manim installed and LaTeX along with their dependencies then execute the provided Python script ```sort.py```.
-
-```bash
-manim -pqh sort.py DistributionCountingSort
-```
 ## Animation Description 🎥
 
 The Manim animation visually demonstrates the Distribution Counting Sort algorithm:
