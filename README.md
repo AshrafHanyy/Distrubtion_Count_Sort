@@ -68,5 +68,4 @@ The animation includes informative text, visualizing the step-by-step process of
 ## Demo ▶️
 ![Demo GIF](demo.gif)
 ## Future Work
-I would like to make the code more dynamic in the future.
    
