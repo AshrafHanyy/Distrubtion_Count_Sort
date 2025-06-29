@@ -13,13 +13,6 @@ Distribution Counting Sort is a sorting algorithm that works efficiently for int
 ### Watch The Video [Here](https://www.youtube.com/watch?v=TVK_2h5Q1Sc).
 </div>
 
-## Table of Contents
-
-- [Introduction](#Introduction)
-- [Installation](#Installation-&-Usage-⚙️)
-- [Animation Description](#Animation-Description)
-- [Demo](#Demo)
-- [Future Work](#Future-Work)
 
 ## Introduction
 
@@ -65,7 +58,6 @@ Informative Text: Includes informative text to enhance understanding, guiding th
 
 The animation includes informative text, visualizing the step-by-step process of the algorithm, and highlighting key elements for better understanding.
 
-## Demo ▶️
+## Quick Look ▶️
 ![Demo GIF](demo.gif)
-## Future Work
    
